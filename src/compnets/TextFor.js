@@ -102,7 +102,7 @@ export default function TextFor(props) {
         <h1>Your text summary</h1>
         <p>
           {
-            text.split(" /\s/").filter((element) => {
+            text.split(/\s/).filter((element) => {
               return element.length !== 0;
             }).length
           }
